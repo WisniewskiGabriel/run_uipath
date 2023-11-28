@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        python.exe main.py
+        sh 'python main.py'
       }
     }
   }
