@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run program') {
       steps {
-        PowerShell("python.exe main.py") 
+        PowerShell(". 'python.exe main.py'")
       }
     }
   }
